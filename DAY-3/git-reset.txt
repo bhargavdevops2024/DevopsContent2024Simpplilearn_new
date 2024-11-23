@@ -183,3 +183,54 @@ nothing to commit, working tree clean
 
 HITESHKUMAR_LTP+Administrator@HITESHKUMAR_LTP MINGW64 /d/DEMO-DAY3/GIT-RESET-HARD (master)
 $
+
+
+
+HITESHKUMAR_LTP+Administrator@HITESHKUMAR_LTP MINGW64 /d/DEMO-DAY3/GIT-RESET-HARD (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+HITESHKUMAR_LTP+Administrator@HITESHKUMAR_LTP MINGW64 /d/DEMO-DAY3/GIT-RESET-HARD (master)
+$ git log --oneline
+5d301eb (HEAD -> master) c4 commit
+912e8df c3 commit
+65fcfed c2 commit
+87a240d c1 commit
+
+HITESHKUMAR_LTP+Administrator@HITESHKUMAR_LTP MINGW64 /d/DEMO-DAY3/GIT-RESET-HARD (master)
+$ git reset 912e8df --mixed
+
+HITESHKUMAR_LTP+Administrator@HITESHKUMAR_LTP MINGW64 /d/DEMO-DAY3/GIT-RESET-HARD (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        m4
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HITESHKUMAR_LTP+Administrator@HITESHKUMAR_LTP MINGW64 /d/DEMO-DAY3/GIT-RESET-HARD (master)
+$ git log --oneline
+912e8df (HEAD -> master) c3 commit
+65fcfed c2 commit
+87a240d c1 commit
+
+HITESHKUMAR_LTP+Administrator@HITESHKUMAR_LTP MINGW64 /d/DEMO-DAY3/GIT-RESET-HARD (master)
+$ git add .
+
+HITESHKUMAR_LTP+Administrator@HITESHKUMAR_LTP MINGW64 /d/DEMO-DAY3/GIT-RESET-HARD (master)
+$ git commit -m "c4 commit"
+[master 34986fc] c4 commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 m4
+
+HITESHKUMAR_LTP+Administrator@HITESHKUMAR_LTP MINGW64 /d/DEMO-DAY3/GIT-RESET-HARD (master)
+$ git log --oneline
+34986fc (HEAD -> master) c4 commit
+912e8df c3 commit
+65fcfed c2 commit
+87a240d c1 commit
+
+HITESHKUMAR_LTP+Administrator@HITESHKUMAR_LTP MINGW64 /d/DEMO-DAY3/GIT-RESET-HARD (master)
+
